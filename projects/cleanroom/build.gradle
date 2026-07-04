@@ -45,17 +45,17 @@ java {
 sourceSets {
     main {
         java {
-            srcDirs = ["$rootDir/src/main/java", "$rootDir/projects/kirino/src/main/java"]
+            srcDirs = ["$rootDir/src/main/java", "$rootDir/projects/kirino/src/main/java", "$rootDir/projects/physics/src/main/java"]
         }
         resources {
-            srcDirs = ["$rootDir/src/main/resources", "$rootDir/projects/kirino/src/main/resources"]
+            srcDirs = ["$rootDir/src/main/resources", "$rootDir/projects/kirino/src/main/resources", "$rootDir/projects/physics/src/main/resources"]
         }
     }
     test {
         compileClasspath += sourceSets.main.runtimeClasspath
         runtimeClasspath += sourceSets.main.runtimeClasspath
         java {
-            srcDirs = ["$rootDir/src/test/java", "$rootDir/projects/kirino/src/test/java"]
+            srcDirs = ["$rootDir/src/test/java", "$rootDir/projects/kirino/src/test/java", "$rootDir/projects/physics/src/test/java"]
         }
         resources {
             srcDirs = ["$rootDir/src/test/resources"]

@@ -1,3 +1,6 @@
 [submodule "projects/kirino"]
 	path = projects/kirino
 	url = https://github.com/CleanroomMC/Kirino-Engine.git
+[submodule "projects/physics"]
+	path = projects/physics
+	url = git@github.com:Kuba663/PhysicsForCleanroom.git
