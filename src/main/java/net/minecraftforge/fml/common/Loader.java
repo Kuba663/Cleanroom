@@ -100,6 +100,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.cleanroommc.physics.PhysicsCommon;
 
 import javax.annotation.Nullable;
 
@@ -378,6 +379,7 @@ public class Loader
         mods.add(new InjectedModContainer(new MixinContainer(), FMLSanityChecker.fmlLocation));
         mods.add(new InjectedModContainer(new ConfigAnytimeContainer(), FMLSanityChecker.fmlLocation));
         KirinoCommonCore.identifyMods(mods);
+        PhysicsCommon.injectMod(mods);
 
         for (String cont : injectedContainers)
         {
